@@ -18,7 +18,7 @@ private String nom;
 @Column(nullable = false)
 @Min(18) //valeur minimale (comparaison)
 private int age;
-@Size(min = 8) // taille minimale
+//@Size(min = 8) // taille minimale
 private String adresse;
 @Size(min=20) // taille min +length
 @Column(nullable = false,length = 20)
