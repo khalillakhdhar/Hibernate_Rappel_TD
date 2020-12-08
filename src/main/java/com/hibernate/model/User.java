@@ -12,16 +12,50 @@ import javax.validation.constraints.Size;
 public class User {
 @Id
 @GeneratedValue(strategy = GenerationType.IDENTITY)
-long id;
+private long id;
 @Column(nullable = false)
-String nom;
+private String nom;
 @Column(nullable = false)
 @Min(18) //valeur minimale (comparaison)
-int age;
+private int age;
 @Size(min = 8) // taille minimale
-String adresse;
+private String adresse;
 @Size(min=20) // taille min +length
 @Column(nullable = false,length = 20)
-String tel;
+private String tel;
+public long getId() {
+	return id;
+}
+public void setId(long id) {
+	this.id = id;
+}
+public String getNom() {
+	return nom;
+}
+public void setNom(String nom) {
+	this.nom = nom;
+}
+public int getAge() {
+	return age;
+}
+public void setAge(int age) {
+	this.age = age;
+}
+public String getAdresse() {
+	return adresse;
+}
+public void setAdresse(String adresse) {
+	this.adresse = adresse;
+}
+public String getTel() {
+	return tel;
+}
+public void setTel(String tel) {
+	this.tel = tel;
+}
+
+
+
+
 
 }
