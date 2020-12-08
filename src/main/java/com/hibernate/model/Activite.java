@@ -15,7 +15,7 @@ public class Activite {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
-	@Column(nullable = false)
+	@Column(nullable = false,columnDefinition = "varchar(255) default 'loisir'")
 	//@DefaultValue("loisir")
 	private String type;
 	@NotNull
