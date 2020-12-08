@@ -16,11 +16,11 @@ long id;
 @Column(nullable = false)
 String nom;
 @Column(nullable = false)
-@Min(18)
+@Min(18) //valeur minimale (comparaison)
 int age;
-@Size(min = 8)
+@Size(min = 8) // taille minimale
 String adresse;
-@Size(min=20)
+@Size(min=20) // taille min +length
 @Column(nullable = false,length = 20)
 String tel;
 
