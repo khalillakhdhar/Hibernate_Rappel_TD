@@ -17,9 +17,9 @@ public class Activite {
 	private long id;
 	@Column(nullable = false)
 	//@DefaultValue("loisir")
-	String type;
+	private String type;
 	@NotNull
-	String description;
+	 private String description;
 	public long getId() {
 		return id;
 	}
